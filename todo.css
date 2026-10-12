@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   Body
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #171717;
+    color: white;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =========================
+   Main Container
+========================= */
+
+.todo-container {
+    width: 90%;
+    max-width: 500px;
+
+    background: #222;
+    padding: 35px;
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   Heading
+========================= */
+
+.todo-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   Input Area
+========================= */
+
+.input-box {
+    display: flex;
+    gap: 10px;
+}
+
+
+/* Input */
+
+#taskInput {
+    flex: 1;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 5px;
+
+    outline: none;
+}
+
+
+/* Add Button */
+
+#addBtn {
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #ff5a00;
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+#addBtn:hover {
+    background: #ff7a32;
+}
+
+
+/* =========================
+   Task List
+========================= */
+
+#taskList {
+    list-style: none;
+    margin-top: 25px;
+}
+
+
+/* Individual Task */
+
+#taskList li {
+    background: #333;
+
+    padding: 12px 15px;
+
+    margin-bottom: 10px;
+
+    border-radius: 5px;
+}
+
+#taskList li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#taskList li span {
+    flex: 1;
+}
+
+#taskList li button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#taskList li.completed span {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+/* =========================
+   Task Counter
+========================= */
+
+#taskCount {
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+/* =========================
+   Clear All Button
+========================= */
+
+/* =========================
+   Task Counter
+========================= */
+
+#taskCount {
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+/* =========================
+   Clear All Button
+========================= */
+
+#clearBtn {
+    width: 100%;
+
+    margin-top: 15px;
+    padding: 10px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #444;
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+#clearBtn:hover {
+    background: #555;
+}
+
+/* =========================
+   Search Input
+========================= */
+
+#searchInput {
+    width: 100%;
+    padding: 12px;
+
+    margin-top: 20px;
+
+    border: none;
+    border-radius: 5px;
+
+    outline: none;
+}
+
+
+/* =========================
+   Improved To-Do Design
+========================= */
+
+/* Main heading */
+.todo-container h1 {
+    color: #c7370b;
+    
+    font-size: 28px;
+}
+
+/* Search and task input */
+#taskInput,
+#searchInput {
+    background: #f5f5f5;
+    color: #222;
+    font-size: 14px;
+}
+
+/* Task row */
+#taskList li {
+    background: #303030;
+    padding: 14px;
+    border: 1px solid #414141;
+    transition: background 0.2s ease;
+}
+
+/* Hover effect on task */
+#taskList li:hover {
+    background: #383838;
+}
+
+/* Task buttons */
+#taskList li button {
+    background: #ff5a00;
+    color: white;
+    transition: opacity 0.2s ease;
+}
+
+/* Button hover */
+#taskList li button:hover {
+    opacity: 0.8;
+}
+
+/* Filter buttons */
+.filter-buttons button {
+    transition: background 0.2s ease;
+}
+
+/* Clear button */
+#clearBtn {
+    background: #a83232;
+}
+
+#clearBtn:hover {
+    background: #c63d3d;
+}
+
+/* Mobile screen */
+@media (max-width: 480px) {
+    .todo-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .todo-container h1 {
+        font-size: 23px;
+    }
+
+    #taskList li {
+        flex-wrap: wrap;
+    }
+}
